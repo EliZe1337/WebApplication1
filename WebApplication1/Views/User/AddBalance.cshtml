@@ -1,0 +1,14 @@
+﻿@using WebApplication1.ApplicationContext
+@model userscard
+
+<link rel="stylesheet" href="~/css/style.css"  />
+<form asp-controller="Admin" asp-action="Register" method="post">
+    
+    <div>
+        <label>Balance</label>
+        <input asp-for="Balance" />
+    </div>
+    <p>
+        <button class="btn btn-primary btn-lg float-right" asp-action="AddBalance" asp-controller="User" type="submit">Отправить</button>
+    </p>
+</form>

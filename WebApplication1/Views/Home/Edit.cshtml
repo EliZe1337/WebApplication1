@@ -1,0 +1,32 @@
+﻿@using WebApplication1.ApplicationContext
+@model shopcard
+
+
+
+<link rel="stylesheet" href="~/css/style.css"  />
+<form asp-controller="Admin" asp-action="Register" method="post">
+    
+    <div>
+        <label>NAME</label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <label>Password</label>
+        <input asp-for="price" />
+        <span asp-validation-for="price"></span>
+    </div> 
+    <div>
+        <label>Desk</label>
+        <input asp-for="Description" />
+        <span asp-validation-for="Description"></span>
+    </div> 
+    <div>
+        <label>type</label>
+        <input asp-for="type" />
+        <span asp-validation-for="type"></span>
+    </div> 
+    <p>
+        <button class="btn btn-primary btn-lg float-right" asp-action="Edit" asp-controller="Home" type="submit">Отправить</button>
+    </p>
+</form>
